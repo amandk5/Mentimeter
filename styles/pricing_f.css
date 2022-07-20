@@ -1,0 +1,32 @@
+#FAQ {
+    width: 98vw;
+    margin-top: 25px
+}
+
+#FAQ h1 {
+    font-family: var(--oswald);
+    margin-bottom: 28px;
+    font-size: 2rem;
+}
+
+#FAQ>div {
+    width: 800px;
+    margin: auto;
+    /* border: 1px solid black; */
+
+}
+
+.FAQ_div {
+    /* border: 1px solid wheat */
+}
+
+.faq_h2 {
+    font-family: var(--MentiDisplay);
+    margin-bottom: 16px;
+}
+
+.faq_p {
+    font-family: var(--Meni_sand);
+    font-size: 15px;
+    margin-bottom: 32px;
+}

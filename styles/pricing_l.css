@@ -1,0 +1,105 @@
+#Lists_mentimeter_price {
+    width: 100%;
+}
+
+#Lists_mentimeter_price_div {
+    width: 1000px;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+
+#Lists_mentimeter_price_div>div {
+    height: 40px;
+}
+
+#mentimeter_price_nav {
+    display: flex;
+    /* border: 1px solid black; */
+    align-items: center;
+    font-family: var(--oswald);
+    font-weight: 600;
+
+}
+
+#mentimeter_price_nav>div:first-child {
+    margin-left: 32%;
+}
+
+#mentimeter_price_nav>div {
+    width: 17%;
+    display: flex;
+    font-size: 1.8rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.mid_con_head_1 {
+    font-size: 30px;
+    margin: 25px 0px 12px 12px;
+    font-weight: 600;
+}
+
+.mid_con_head_2 {
+    background-color: #f3f5f9;
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.mid_con_head_3 {
+
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.mid_con_first {
+    width: 32%;
+    /* border: 1px solid black; */
+
+}
+
+.mid_con_cont {
+    width: 17%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.mid_con_num {
+    width: 17%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.mid_con_tick {
+    width: 17%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.mid_con_cross {
+    width: 17%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+#menti_meter_nav {
+    margin-left: 32%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 68%;
+    display: flex;
+    padding: 10px;
+}
+
+.menti_price_inner_butt {
+    width: 24%;
+    margin-right: 1%;
+    display: flex;
+    border-radius: 8px;
+    padding: 12px 0px;
+    font-family: var(--MentiDisplay);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--list_dark_grey);
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@300;400&family=Raleway:ital,wght@0,300;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@300;400&family=Raleway:wght@500&display=swap');
+
+:root {
+    --MentiDisplay: 'Raleway', sans-serif;
+    --oswald: 'Oswald', sans-serif;
+    --Meni_sand: 'Quicksand', sans-serif;
+    --anc_col: #2574ff;
+    --border_grey: #c4c6cd;
+    --second_header_font_grey: #545a6e;
+    --opacity_on_click: #f1f1f3;
+    --button_blue: #196cff;
+    --see_and_compare: #e8f0ff;
+    --see_and_compare_font: #4486ff;
+    --list_grey: #f3f5f9;
+    --list_dark_grey: #dbdce1
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+#heading_mentimeter_pricing_page_strc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Metimeter_heading_1 {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 300;
+    font-family: var(--MentiDisplay);
+    padding-top: 64px;
+    padding-bottom: 34px;
+}
+
+.header_quick {
+    font-family: var(--Meni_sand);
+    color: var(--border_grey);
+    font-weight: 500;
+}
+
+#menitmeter_heading_sec_2 span {
+    font-size: 20px;
+}
+
+.header_quick_bold {
+    font-family: var(--Meni_sand);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--second_header_font_grey)
+}
+
+.anc {
+    color: var(--anc_col);
+    font-weight: 600;
+}
+
+span {
+    display: inline-block
+}
