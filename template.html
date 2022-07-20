@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <style>
+        :root{
+            --blue:rgb(25, 108, 255);
+            --white:white;
+        }
+        #navbar{
+            height: 45px;
+            padding: 5px 0px;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid gainsboro;
+            border-bottom: 1px solid gainsboro;
+        }
+        #navbar>div{
+            /* border: 1px solid black; */
+        }
+        #navbar>div:first-child>h3,p{
+            margin: 3px ;
+        }
+        /* navbar right side  */
+        #navbar>div:last-child{
+            display: flex;
+            margin: 0px 3px;
+        }
+        #navbar>div:last-child>button{
+            height: 90%;
+            display: flex;
+            align-items: center;
+            background-color: var(--blue);
+            color: var(--white);
+            border: none;
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+        }
+        #navbar>div:last-child>button>h2{
+            margin: 5px;
+            padding: 0;
+            margin-left: 5px;
+            padding-right: 10px;
+            border-right: 1px solid var(--white);
+            font-weight: normal;
+        }
+        #navbar>div:last-child>button>span{
+            margin-left: 5px;
+        }
+        #navbar>div:last-child>select{
+            height: 90%;
+            background-color: var(--blue);     
+            color: var(--white);
+            border: none;     
+            border-top-right-radius: 0.25rem;
+            border-bottom-right-radius: 0.25rem;
+            width: 20px;
+        }
+
+        /* navbar-2  */
+        #navbar-2{
+            height: 45px;
+            padding: 7px 0px;
+            border-bottom: 1px solid gainsboro;
+        }
+        #navbar-2>button{
+            height: 90%;
+            display: flex;
+            align-items: center;
+            background-color: var(--blue);
+            color: var(--white);
+            border: none;
+            border-radius: 0.25rem;
+        }
+        #navbar-2>button>h2{
+            padding: 0px 5px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <h3>Chemistry Quiz</h3>
+            <p>Created by Aman</p>
+        </div>
+        <div>
+            <button>
+                <span>
+                    <img src="https://www.iconsdb.com/icons/download/white/play-32.png" width="15px" height="15px"/>
+                </span>
+                <h2>Present</h2>
+            </button>
+            <select name="" id="">
+                <option value=""></option>
+                <option value="">Open mentimote</option>
+                <option value="">Preview Presentation</option>
+            </select>
+        </div>
+    </div>
+    <div id="navbar-2">
+        <button>
+            <span>
+                <img src="https://www.iconsdb.com/icons/download/white/plus-16.png" width="11px" height="11px"/>
+            </span>
+            <h2>New Slide</h2>
+        </button>
+    </div>
+</body>
+</html>
