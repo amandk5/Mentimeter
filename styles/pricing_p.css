@@ -1,0 +1,229 @@
+#monthly_yearly_butt {
+    display: block;
+}
+
+#switch_buttons {
+    width: 242px;
+    height: 45px;
+    margin: auto;
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 2px 0px;
+    border-radius: 40px;
+
+    border: 1.5px solid var(--border_grey);
+}
+
+#switch_buttons>div {
+    /* border: 1px solid black; */
+    height: 95%;
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button_blue);
+    box-shadow: rgba();
+    border-radius: 20px;
+}
+
+#switch_buttons>div:first-child {
+    padding-left: 2%;
+}
+
+#switch_buttons>div:last-child {
+    padding-right: 2%;
+}
+
+.Diff_plans_mentimeter_plans {
+    height: 100%;
+}
+
+#Diff_plans_mentimeter_plans_cover {
+    width: 98vw;
+}
+
+#Diff_plans_mentimeter_plans_outter_div {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1050px;
+    /* border: 1px solid black; */
+    font-family: var(--Meni_sand);
+    margin: center;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center
+}
+
+
+
+
+
+.Diff_plans_mentimeter_plans:nth-child(2) {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.Diff_plans_mentimeter_plans:nth-child(3) {
+    border-right: 2px solid black;
+}
+
+.Diff_plans_mentimeter_plans>div {
+    width: 85%;
+    margin: auto;
+}
+
+
+
+#reco {
+    background-color: var(--button_blue);
+    margin: auto;
+    padding: 4px 8px;
+    border-radius: 15px;
+    color: white;
+}
+
+.plans_h2 {
+    font-size: 36px;
+}
+
+.plans_h2_bottom {
+    margin-top: 1px;
+    height: 32px;
+}
+
+.plans_spacing {
+    height: 23px;
+}
+
+.plans_pricing {
+    font-size: 1.4rem;
+    display: flex;
+}
+
+.plans_pricing_div_1 {
+    font-size: 1rem;
+
+}
+
+.plans_pricing_div_2 {
+    margin-top: 4px;
+    font-size: 1.4rem;
+
+}
+
+.plans_pricing_bottom {
+    height: 40px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    display: grid;
+    align-items: center;
+}
+
+.plans_pricing_bottom>div:first-child {
+    display: flex;
+}
+
+.plans_pricing_bottom>div:last-child {
+    display: flex;
+}
+
+#save_id {
+    display: inline-block;
+    background-color: #e5f7f1;
+    color: #38c092;
+    padding: 2px 6px;
+    font-weight: 600;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.button_prices_mentimeter {
+    width: 80%;
+    margin: auto;
+    color: white;
+    background-color: var(--button_blue);
+    border-radius: 4px;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border: 1px solid black; */
+}
+
+.Quicksand_on_mentimeter {
+    font-family: var(--Meni_sand);
+    color: var(--second_header_font_grey)
+}
+
+
+
+#See_and_compare_all_features_inner {
+    width: 700px;
+    margin: auto;
+    background-color: var(--see_and_compare);
+    color: var(--see_and_compare_font);
+    display: grid;
+    justify-content: center;
+    padding: 16px;
+    margin-top: 64px;
+    margin-bottom: 40px;
+    border-radius: 6px
+}
+
+@media all and (min-width: 740px) and (max-width: 1200px) {
+    #Metimeter_heading_1 {
+        font-size: 1.1rem;
+    }
+
+    #menitmeter_heading_sec_2 span {
+        font-size: 17px;
+    }
+
+    #Diff_plans_mentimeter_plans_outter_div {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: none;
+        justify-content: none;
+        width: 90%;
+        border: 1px solid black;
+        margin-top: 40px;
+    }
+
+    #Diff_plans_mentimeter_plans {
+        margin: auto 0px;
+    }
+
+    .Diff_plans_mentimeter_plans:nth-child(2) {
+        border-right: none;
+        border-left: none;
+    }
+
+    .Diff_plans_mentimeter_plans:nth-child(3) {
+        border-right: none;
+    }
+
+    .Diff_plans_mentimeter_plans {
+        width: 100%;
+        margin: 0px
+    }
+
+    .Diff_plans_mentimeter_plans>div {
+        border: 1px solid black;
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    #Lists_mentimeter_price {
+        display: none;
+    }
+
+    #See_and_compare_all_features_outter {
+        display: none
+    }
+
+}
