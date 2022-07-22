@@ -1,0 +1,211 @@
+#container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+#container1>.box1{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: 1px solid transparent;
+    text-align: left;
+    padding: 20px;
+}
+#container1>.box1>h1{
+    font-size: 50px;
+}
+#container1>.box1>a{
+    padding: 10px 10px;
+    text-align: center;
+    background-color: blue;
+    width: 40%;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#container1>.box1>p{
+
+text-align: left;
+font-size: 20px;
+}
+#container1>.box2{
+    width: 40%;
+}
+#container1>.box2>video{
+width: 90%;
+
+}
+#container2{
+    width: 50%;
+    margin-top: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#container3>.box1{
+    width: 40%;
+    margin-right: 3%;
+}
+#container3>.box1>img{
+    width: 100%;
+}
+#container3>.box2{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#container3>.box1{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#container3>.box2{
+    width: 40%;
+    margin-right: 3%;
+}
+#container3>.box2>img{
+    width: 100%;
+}
+#container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#container3>.box1{
+    width: 40%;
+    margin-right: 3%;
+}
+#container3>.box1>img{
+    width: 100%;
+}
+#container3>.box2{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#container3>.box1{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#container3>.box2{
+    width: 40%;
+    margin-right: 3%;
+}
+#container3>.box2>img{
+    width: 100%;
+}
+#container4{
+    text-align: center;
+
+}
+#container4>h1{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+#container4>#container5{
+    display: flex;
+    justify-content: space-evenly;
+}
+#container4>#container5>.box{
+    width: 30%;
+    padding: 10px;
+}
+#container4>#container5>.box>img{
+    width: 80%;
+    margin-bottom: 10px;
+}
+#container4>#container5>.box>h4,p{
+    width: 80%;
+    text-align: left;
+    margin: auto;
+}
+#container4>#container5>.box>p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+#container4>#container5>.box:hover{
+    cursor: pointer;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    opacity: 1;
+    	visibility: visible;
+    	margin-bottom: 10px;
+    	transform: translateY(0);
+        margin-top: -20px;
+}
+
+
+
+#container6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    margin-top: 50px;
+  }
+  #container6>img{
+    width: 100%;
+  }
+  #container6>h1{
+    position: relative;
+    margin-top: -290px;
+    color: white;
+    width: 40%;
+    text-align: center;
+  }
+  #container6>p{
+    width: 40%;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #container6>button{
+    margin-top: -10px;
+    padding: 10px 30px;
+    border: 2px solid transparent;
+    color: blue;
+  border-radius: 5px;
+  font-weight: bold;
+  }
