@@ -7,6 +7,13 @@
     <title>Template</title>
     <link rel="stylesheet" href="./styles/styleType.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- bootstrap  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!-- new for modal  -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         :root{
             --blue:rgb(25, 108, 255);
@@ -158,8 +165,11 @@
         #slide_page>div{
             display: flex;
             padding: 5px 5px 5px 0px;
-            height: 100px;
+            height: 90px;
             /* border: 1px solid black; */
+        }
+        #slide_page>div:hover{
+            opacity: 0.5;
         }
         .no{
             width: 20%;
@@ -179,6 +189,10 @@
             border: 1px solid black;
             border-radius: 0.25rem;
         }
+        .page>img{
+            width: 100%;
+            height: 100%;
+        }        
 
         /* main slide  */
         #main_slide{
@@ -187,6 +201,7 @@
         #main_slide>div{
             width: 100%;
             height: auto;
+            background: transparent;
         }
         #main_slide>div:first-child{
             height: 360px;         
@@ -220,6 +235,100 @@
             border: 1px solid black;
             margin-right: 10px;
         }        
+        /* main slide,video section */
+        
+        #heading>input{
+            margin: 0px auto;
+            font-size: 25px;
+            border: none;
+            font-weight: bold;
+            background: transparent;
+            color: var(--white);
+        }
+        #heading>input:hover{
+            border: 1px solid black;
+        }
+        #video_section{
+            width: 80%;
+            height:80% ;
+            margin: 10px auto;
+            /* border: 1px solid black; */
+        }
+        #video_section>div{
+            width: 100%;
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        #video_caption>p{
+            margin: 10px 140px;
+            color: var(--white);
+        }
+        /* increase and decrease button  */
+        #inc,#dec:hover{
+            cursor: pointer;
+        }
+        
+        /* modal style  */
+        /* The Modal (background) */
+        .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        /*padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 5px;
+        border: 1px solid #888;
+        width: 98%;
+        height: 98%;
+        background: url("https://t4.ftcdn.net/jpg/03/45/16/85/360_F_345168514_PI49D3RASetPGhbzqwLXaDDoz5avjNZy.jpg"); 
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        overflow: hidden;
+    }
+
+        /* The Close Button */
+        .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        }
+        /* Add Animation */
+        @keyframes animatetop {
+        from {top: -300px; opacity: 0}
+        to {top: 0; opacity: 1}
+        }
+
+        /* modal box presentation  */
+        #presentation{
+            height: 80%;
+            height: 80%;
+            color: #fefefe;        
+        }
     </style>
 </head>
 <body>
@@ -237,7 +346,7 @@
                 </span>
                 <h2>Share</h2>
             </button>
-            <button>
+            <button id="myBtn">
                 <span>
                     <img src="https://www.iconsdb.com/icons/download/white/play-32.png" width="15px" height="15px"/>
                 </span>
@@ -290,7 +399,7 @@
     <div id="main">
         <div id="slide_page">
             <!-- single div template page  -->
-            <div>
+            <!-- <div>
                 <div class="no">
                     <span>
                         1
@@ -302,24 +411,32 @@
                 <div class="page">
 
                 </div>
-            </div>
+            </div> -->
             <!-- ************** -->
         </div>
         <div id="main_slide">
             <div>
-
+                <div id="heading"></div>
+                <div id="video_section"></div>
+                <div id="video_caption"></div>
+                <!-- test  -->
+                <!-- <h1 id="heading">This is a heading</h1>
+                <div id="video_section">
+                    <iframe class="video" src=""></iframe>
+                </div> -->
+                <!-- -------->
             </div>
             <div>
                 <div>
                     <div>
-                        <img src="https://images.unsplash.com/photo-1658309833607-4de9956d0bbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="" width="100%" height="100%">
+                        <img src="https://t4.ftcdn.net/jpg/03/45/16/85/360_F_345168514_PI49D3RASetPGhbzqwLXaDDoz5avjNZy.jpg" alt="" width="100%" height="100%">
                     </div>
                     <p>The slide image appears in your audience's devices</p>
                 </div>                
                 <div>
                     <h1>T</h1>
-                    <img src="https://www.iconsdb.com/icons/download/color/8C8C8C/minus-16.png" width="12px" height="5px">
-                    <img src="https://www.iconsdb.com/icons/download/black/plus-2-16.png" width="12px" height="13px" >
+                    <img id="dec" src="https://www.iconsdb.com/icons/download/color/8C8C8C/minus-16.png" width="12px" height="5px">
+                    <img id="inc" src="https://www.iconsdb.com/icons/download/black/plus-2-16.png" width="12px" height="13px" >
                 </div>
             </div>
         </div>
@@ -353,7 +470,7 @@
                         </div>
             
                         <h3>Content slides</h3>
-                        <div class="dis_flex">
+                        <div class="dis_flex" id="add_heading">
                             <span class="material-symbols-outlined">feed</span>
                             <i>Heading</i>
                         </div>
@@ -512,14 +629,43 @@
         </div>
       <!-- here is the end of style type -->
         <!-- =================================  -->
-    
+        <!-- modal  -->
+        </div>
+        <!-- <h2>Modal Example</h2> -->
 
-    </div>
+        <!-- Trigger/Open The Modal -->
+        <!-- <button id="myBtn">Open Modal</button> -->
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="presentation"></div>
+            <!-- <p>Some text in the Modal..</p> -->
+        </div>
+
+        </div>
+    <!-- ----------->
 </body>
 </html>
 <script>
+    let headingVideo = JSON.parse(localStorage.getItem("heading"));
+
+    if(headingVideo===null){
+        localStorage.setItem("heading",JSON.stringify("Heading"));
+        headingVideo = "Heading";
+    }
+
     document.getElementById("new_slide").addEventListener("click",() => {
         add_slide();
+    })
+
+    window.addEventListener("load", ()=>{
+        display_slidepage(page);
+        let mainSlide = document.querySelector("#main_slide>div:first-child");
+        mainSlide.style.backgroundImage='url("https://t4.ftcdn.net/jpg/03/45/16/85/360_F_345168514_PI49D3RASetPGhbzqwLXaDDoz5avjNZy.jpg")';
     })
 
     let page=[1];
@@ -551,7 +697,7 @@
                     </span>
                 </div>
                 <div class="page">
-
+                    <img src="https://t4.ftcdn.net/jpg/03/45/16/85/360_F_345168514_PI49D3RASetPGhbzqwLXaDDoz5avjNZy.jpg"/>
                 </div>
             `;
             newSlide.addEventListener("click", ()=>{
@@ -561,7 +707,130 @@
         })
     }
 
+// append video to main slide  
+document.getElementById("add").addEventListener("click", ()=>{
+    // https://youtu.be/drTKSu5DEh4
+    let mainSlide = document.querySelector("#main_slide>div");
+
+    let input_url = document.getElementById("url_input").value.split("/");
+    let video_id = input_url[input_url.length-1];
+
+    let video_url = `https://www.youtube.com/embed/${video_id}`;
+    
+    let video_div = document.getElementById("video_section");
+    video_div.innerHTML = `<iframe class="video" src="${video_url}" allowfullscreen></iframe>`;
+    
+    // add to ls 
+
+    localStorage.setItem("video",JSON.stringify(video_url));    
+})
+
+// <h1 id="heading">This is a heading</h1>
+//                 <div id="video_section">
+//                     <iframe class="video" src=""></iframe>
+//                 </div>
+
+// append heading to main slide 
+document.getElementById("add_heading").addEventListener("click",()=>{
+    // let mainSlide = document.querySelector("#main_slide>div");
+    let heading = document.getElementById("heading");
+    heading.innerHTML = `<input type='text' value="${headingVideo}" id="vid_head"/>`;
+    addHead();
+})
+
+// add heading to ls upon changing 
+// if(isHeading==true){
+    let addHead = () => {
+        document.getElementById("vid_head").addEventListener("input", () => {
+        let val = document.getElementById("vid_head").value;
+        localStorage.setItem("heading",JSON.stringify(val));
+        })
+    };
+// }
+
+
+// add caption to video
+document.getElementById("video_input").addEventListener("input",(e) => {
+    let video_caption = document.getElementById("video_caption");
+    let val = document.getElementById("video_input").value;
+    
+    video_caption.innerHTML=null;
+    video_caption.innerHTML = `<p>${val}</p>`;
+    console.log(val);
+
+    // add caption to ls 
+    localStorage.setItem("caption",JSON.stringify(val));
+
+})
+
+let font = 25;
+// increase heading font 
+document.getElementById("inc").addEventListener("click", ()=> {
+    let heading = document.querySelector("#heading>input");
+    font++;
+    heading.style.fontSize = `${font}px`;
+})
+document.getElementById("dec").addEventListener("click", ()=> {
+    let heading = document.querySelector("#heading>input");
+    font--;
+    heading.style.fontSize = `${font}px`;
+})
+
+// set caption and heading to ls 
+// let heading_video = document.querySelector("#heading>input").value;
+// if(heading_video!==null){
+//     localStorage.setItem("heading",JSON.stringify(heading_video));
+// }
+
 </script>
 <script src="./scripts/styleType.js"></script>
+<script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+let add_content= () => {
+    let content = document.querySelector("#presentation");
+    let heading = JSON.parse(localStorage.getItem("heading"));
+    let videoSrc = JSON.parse(localStorage.getItem("video"));
+    let videoCaption = JSON.parse(localStorage.getItem("caption"));
+
+    content.innerHTML=`
+                <div id="heading">
+                    <h1>${heading}</h1>
+                </div>
+                <div id="video_section">
+                    <iframe class="video" src="${videoSrc}" allowfullscreen></iframe> 
+                </div>
+                <div id="video_caption">
+                    <p>${videoCaption}</p>    
+                </div>
+    `;
+}
+
+btn.onclick = function() {
+    add_content();
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 
 
