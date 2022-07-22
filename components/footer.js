@@ -4,7 +4,7 @@ function footer(){
         <div class="box1">
             <img src="https://www.bing.com/th?id=ODLS.5a16aeae-5032-48af-9d2d-6c0feed3e8a3&w=32&h=32&o=6&pid=13.1"
                 alt="logo" />
-            <h2>Mentimeter</h2>
+                <h1><a href="index.html">Mentimeter</a></h1>
         </div>
         <div class="box2">
             <p>Features</p>

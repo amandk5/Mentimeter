@@ -1,0 +1,128 @@
+
+#box1 {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+#box1 > h1 {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+#box1 > p {
+  text-align: center;
+  width: 35%;
+  margin: auto;
+}
+#box1 > a > button {
+  padding: 10px 30px;
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+#box1 > a ~ p {
+  color: grey;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+#container1 > img {
+  width: 50%;
+  margin: auto;
+  border: 1px solid transparent;
+  display: flex;
+  opacity: 0.5;
+}
+#container1 > img:last-child {
+  width: 5%;
+  position: relative;
+  margin-top: -15%;
+  margin-bottom: 20%;
+  cursor: pointer;
+  opacity: 1;
+  border-radius: 50px;
+  transition: 0.5s ease;
+}
+
+#exampleModalCenter {
+  width: 100%;
+}
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#exampleModalCenter video {
+  width: 200%;
+}
+#container2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecedef;
+  padding: 70px;
+}
+#container2>#bigbox{
+  display: flex;
+ width: 90%;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+#container2>#bigbox>.box{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid transparent;
+text-align: center;  
+}
+#container2>#bigbox>.box>h2{
+  font-size: 20px;
+  margin-top: 20px;
+}
+#container2>#bigbox>.box>p{
+  font-size: 15px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+#container2>button{
+color: blue;
+padding: 10px 20px;
+border: 1px solid blue;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 30px;
+margin-bottom: -20px;
+}
+#container3{
+  padding: 40px;
+  text-align: center;
+}
+#container3>h1{
+  width: 40%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+#container3>#bigbox{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+#container3>#container4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container3>#container4>.box1>img{
+  width: 90%;
+}
