@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template</title>
+    <link rel="stylesheet" href="./styles/styleType.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <style>
         :root{
             --blue:rgb(25, 108, 255);
@@ -140,7 +142,7 @@
         /* main container  */
         #main{
             display: grid;
-            grid-template-columns: 14% 60% 26%;
+            grid-template-columns: 14% 55% 31%;
             height: 80vh;
         }
         #main>div{
@@ -321,8 +323,197 @@
                 </div>
             </div>
         </div>
-        <!-- ketan's part  -->
-        <div id="edit_slide"></div>
+
+
+         <!-- =================================  -->
+        <!-- this is done by Ketan(fw18_0991) === it Style Type part -->
+        <div id="styleType">
+            <div id="head">
+                <h3 id="style_Heading">Style Type</h3>
+                
+                <div class="dropdown">
+                    <button id="dropdown_btn" onclick="myFunction()" class="dropbtn"> Categories >> </button>                
+                    <div id="myDropdown" class="dropdown-content">
+                        
+                        <h3>Popular Question Type</h3>
+                        <div class="dis_flex">
+                            <span class="material-symbols-outlined">forum</span>
+                            <i>Q&A</i>
+                            <span class="material-count">13</span>
+                        </div>
+                                
+                        <h3>Quiz Competition</h3>
+                        <div class="dis_flex">
+                            <span class="material-symbols-outlined">playlist_add_check</span>
+                            <i>Select Answer</i>
+                        </div>
+                        <div class="dis_flex">
+                            <span class="material-symbols-outlined">edit_note</span>
+                            <i>Type Answer</i>
+                        </div>
+            
+                        <h3>Content slides</h3>
+                        <div class="dis_flex">
+                            <span class="material-symbols-outlined">feed</span>
+                            <i>Heading</i>
+                        </div>
+                        <div class="dis_flex">
+                            <span class="material-symbols-outlined">segment</span>
+                            <i>Paragraph</i>
+                        </div>
+                        <div class="dis_flex">
+                            <span class="material-symbols-outlined">image</span>
+                            <i>Image</i>
+                        </div>
+                        <div class="dis_flex">
+                            <span class="material-symbols-outlined">play_circle</span>
+                            <i>Video</i>
+                        </div>
+                        <div class="dis_flex">
+                            <span class="material-symbols-outlined">format_quote</span>
+                            <i>Quote</i>
+                        </div>
+                        <div class="dis_flex">
+                            <span class="material-symbols-outlined">123</span>
+                            <i>Number</i>
+                        </div>
+                        <div class="dis_flex">
+                            <span class="material-symbols-outlined">qr_code_2</span>
+                            <i>Instructions</i>
+                        </div>
+            
+                        <h3>Advanced Questions</h3>
+                        <div class="dis_flex">
+                            <span class="material-symbols-outlined">drag_handle</span>
+                            <i>100 points</i>
+                        </div>
+                        <div class="dis_flex">
+                            <span class="material-symbols-outlined">grid_view</span>
+                            <i>2x2 grid</i>
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+    
+                <div id="div2">
+                    <div id="sub-head">
+                        <h4 id="content" class="tablink" onclick="changeData('content_type', this, 'green', 'white')">Content</h4>
+                        <h4 id="customize" class="tablink" onclick="changeData('customize_type', this, 'green','white')">Customize</h4>
+                    </div>
+    
+                   <!-- here is the content part -->
+                    <div id="content_type" class="tabcontent">
+                            <a href="#">Add meta description</a>
+    
+                            <div id="video_div">
+                                <h3>Video caption</h3>
+                                <input type="text" id="video_input">
+                            </div>
+    
+                            <div id="image_div" class="for_i">
+                                <h3>Image <i>?</i> </h3>
+                                <div id="image_box">
+                                    <div id="image"> <img id="img" src="" alt="Add Picture"></div>
+                                    <button id="edit">Edit</button>
+                                    <button id="remove">Remove</button>
+                                </div>
+                            </div>
+    
+                            <div id="URL_div" class="for_i">
+                                <h3>URL <i>?</i> </h3>
+                                <div id="URL_box">
+                                    <input type="text" id="url_input" placeholder="https://youtube.com/xxxx">
+                                    <button id="add">Add</button>
+                                </div>
+                            </div>
+    
+                            <div id="reaction_div" class="for_i">
+                                    <h3>Reactions <i>?</i> </h3>
+                                <div id="reaction_flex">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                    <span class="material-symbols-outlined">question_mark</span>
+                                    <span class="material-symbols-outlined">thumb_up</span>
+                                    <span class="material-symbols-outlined">thumb_down</span>
+                                </div>
+                            </div>
+                    </div>
+    
+                    <!-- here is the customize part -->
+                    <div id="customize_type" class="tabcontent">
+    
+                        <div id="slide_setting_div" class="for_i">
+                            <h3>Slide setting <i>?</i> </h3>
+                            <div id="slide_setting_box">
+                                <div>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                    <i>Close voting</i>
+                                </div>
+                                 <div>
+                                      <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                      </label>
+                                   <i>Hide instructions bar</i> <i>?</i>
+                                </div>
+                                <div>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                    <i>Hide results</i> <i id="show_results">Show results on all slides</i>
+                                </div>
+                               
+                            </div>
+                        </div>
+    
+                        <div id="layout_div">
+                            <h3>Layouts <button>BETA</button> </h3>
+                            <div id="layouts_beta">
+                                <span class="material-symbols-outlined">drag_handle</span>
+                                <span class="material-symbols-outlined">table_rows</span>
+                                <span class="material-symbols-outlined">view_module</span>
+                                <span class="material-symbols-outlined">view_list</span>
+                                <span class="material-symbols-outlined">horizontal_split</span>
+                                <span class="material-symbols-outlined">view_comfy</span>
+                                <span class="material-symbols-outlined">view_compact</span>
+                                <span class="material-symbols-outlined">vertical_split</span>
+                            </div>
+                        </div>
+    
+                        <div id="image_div" class="for_i">
+                            <h3>Image <i>?</i> </h3>
+                            <div id="image_box">
+                                <div id="image"> <img id="img" src="" alt="Add Picture"></div>
+                                <button id="edit">Edit</button>
+                                <button id="remove">Remove</button>
+                            </div>
+                        </div>
+    
+                      
+    
+                        <div id="advanced_div" >
+                           
+                                <div id="advanced_div1">
+                                    <h3>Advanced layouts</h3> <button>BETA</button> <h3 id="expand1">Expand</h3>
+                                </div>
+                                <div id="advanced_div2">
+                                    <h3>Advanced colors</h3> ✡️ <button>BETA</button> <h3 id="expand2">Expand</h3>
+                                </div>
+    
+                        </div>
+                </div>
+    
+            </div> 
+            
+        </div>
+      <!-- here is the end of style type -->
+        <!-- =================================  -->
+    
+
     </div>
 </body>
 </html>
@@ -370,7 +561,13 @@
         })
     }
 
+</script>
+<script src="./scripts/styleType.js"></script>
+
+
+
     // remove created by on hovering over input 
     // document.getElementById("quiz_name").addEventListener("")
 
 </script>
+

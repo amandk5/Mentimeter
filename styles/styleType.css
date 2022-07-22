@@ -1,5 +1,5 @@
 #styleType{
-    width: 35%;
+    width: 90%;
     border: 1px solid black;
     height: auto;
     padding: 20px;
@@ -15,12 +15,14 @@
     width: 30%;
     padding: 5px;
     text-align: center;
+    cursor: pointer;
 }
 #customize{
     border-bottom: 1px solid;
     width: 30%;
     padding: 5px;
     text-align: center;
+    cursor: pointer;
 }
 #button>img{
     height: 20px;
@@ -95,7 +97,7 @@ span{
 
   #video_input{
     padding: 10px;
-    width: 100%;
+    width: 90%;
   }
 
   .for_i>h3>i{
