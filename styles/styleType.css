@@ -116,6 +116,9 @@ span{
     border: 1px solid grey;
     border-radius: 5px;
   }
+  #img{
+    border: 1px solid black;
+  }
   #URL_box{
     display: flex;
     gap: 20px;
