@@ -28,6 +28,18 @@
         #navbar>div:first-child>h3,p{
             margin: 3px ;
         }
+        #quiz_name{
+            font-size: 20px;
+            border: none;
+            font-weight: bold;
+        }
+        #quiz_name:hover{
+            border: 1px solid black;
+        }
+        ::-webkit-input-placeholder{
+            color: var(--black);
+            opacity: 1 !important;
+        }
         /* navbar right side  */
         #navbar>div:last-child{
             display: flex;
@@ -35,15 +47,28 @@
         }
         #navbar>div:last-child>button{
             height: 90%;
+            margin-left: 10px ;
             display: flex;
             align-items: center;
             background-color: var(--blue);
             color: var(--white);
             border: none;
+        }
+        #navbar>div:last-child>button:first-child{
+            border-radius: 0.25rem;
+            background-color: var(--grey);
+            color: var(--black);
+        }
+        #navbar>div:last-child>button:nth-child(2){
             border-top-left-radius: 0.25rem;
             border-bottom-left-radius: 0.25rem;
         }
-        #navbar>div:last-child>button>h2{
+        #navbar>div:last-child>button:first-child>h2{
+            margin: 5px;
+            padding: 0;
+            margin-left: 5px;
+        }
+        #navbar>div:last-child>button:nth-child(2)>h2{
             margin: 5px;
             padding: 0;
             margin-left: 5px;
@@ -94,7 +119,7 @@
             background-color: var(--grey);
             color: var(--black);
         }
-        /* #navbra-2 right side  */
+        /* #navbar-2 right side  */
         #navbar-2-right{
             display: flex;
             column-gap: 10px;
@@ -194,16 +219,24 @@
             height: 40px;
             border: 1px solid black;
             margin-right: 10px;
-        }
+        }        
     </style>
 </head>
 <body>
     <div id="navbar">
         <div>
-            <h3>Chemistry Quiz</h3>
+            <!-- <h3> -->
+                <input type="text" placeholder="" id="quiz_name" value="Chemistry Quiz">
+            <!-- </h3> -->
             <p>Created by Aman</p>
         </div>
         <div>
+            <button>
+                <span>
+                    <img src="https://www.iconsdb.com/icons/download/black/sharethis-24.png" width="15px" height="15px"/>
+                </span>
+                <h2>Share</h2>
+            </button>
             <button>
                 <span>
                     <img src="https://www.iconsdb.com/icons/download/white/play-32.png" width="15px" height="15px"/>
@@ -245,11 +278,12 @@
                 </span>
                 <h3>Themes</h3>
             </div>
-            <div>
+            <div id="settings">
                 <span>
                     <img src="https://www.iconsdb.com/icons/download/black/settings-24.png" width="15px" height="15px">
                 </span>
                 <h3>Settings</h3>
+
             </div>
         </div>
     </div>
@@ -289,6 +323,7 @@
                 </div>
             </div>
         </div>
+
 
          <!-- =================================  -->
         <!-- this is done by Ketan(fw18_0991) === it Style Type part -->
@@ -478,6 +513,7 @@
       <!-- here is the end of style type -->
         <!-- =================================  -->
     
+
     </div>
 </body>
 </html>
@@ -486,25 +522,52 @@
         add_slide();
     })
 
+    let page=[1];
+    if(page.length==1){
+        count=1;
+    }
+
     let add_slide = () => {
+        count++;
+        page.push(count);
+        display_slidepage(page);
+    }
+
+    let display_slidepage = (pagesArr) => {
         let slide_page_container = document.getElementById("slide_page");
 
-        let newSlide = document.createElement("div");
-        newSlide.innerHTML=`
-            <div class="no">
-                <span>
-                    1
-                </span>
-                <span>
-                    <img src="https://www.iconsdb.com/icons/download/blue/play-24.png"/>
-                </span>
-            </div>
-            <div class="page">
+        slide_page_container.innerHTML = null;
 
-            </div>
-        `;
-        slide_page_container.append(newSlide);
+        pagesArr.forEach((p) => {
+
+            let newSlide = document.createElement("div");
+            newSlide.innerHTML=`
+                <div class="no">
+                    <span>
+                        ${p}
+                    </span>
+                    <span>
+                        <img src="https://www.iconsdb.com/icons/download/blue/play-24.png"/>
+                    </span>
+                </div>
+                <div class="page">
+
+                </div>
+            `;
+            newSlide.addEventListener("click", ()=>{
+                alert(p);
+            })
+            slide_page_container.append(newSlide);
+        })
     }
+
 </script>
 <script src="./scripts/styleType.js"></script>
+
+
+
+    // remove created by on hovering over input 
+    // document.getElementById("quiz_name").addEventListener("")
+
+</script>
 
