@@ -13,7 +13,8 @@
     --see_and_compare: #e8f0ff;
     --see_and_compare_font: #4486ff;
     --list_grey: #f3f5f9;
-    --list_dark_grey: #dbdce1
+    --list_dark_grey: #dbdce1;
+
 }
 
 * {
@@ -28,6 +29,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#mentimeter_price_nav {
+
+    background-color: white;
 }
 
 #Metimeter_heading_1 {
@@ -63,4 +69,21 @@
 
 span {
     display: inline-block
+}
+
+#button_prices_custom_plan {
+    background-color:
+        #dbdce1;
+    color: black;
+}
+
+#button_prices_basic_plan {
+    background-color:
+        #dbdce1;
+    color: black;
+}
+
+#button_prices_current_plan {
+    background-color: #f1f1f3;
+    color: black;
 }

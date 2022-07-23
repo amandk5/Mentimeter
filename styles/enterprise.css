@@ -25,17 +25,23 @@
     --explore_more_blue: #246eff
 }
 
-#mentimeter_1_om_div_1 {}
+#mentimeter_1_om_div_1 {
+    margin-top: 42px;
+}
+
+textarea {
+    resize: vertical;
+}
 
 #mentimeter_1_om_div_1>div {
     width: 1100px;
     margin: auto;
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #mentimeter_1_in_div_1 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 50%;
 }
 
@@ -70,11 +76,20 @@
         width: 100%;
     }
 
+    #mentimeter_1_om_div_1>div {
+        width: 90%;
+
+    }
+
+    #mentimeter_1_in_div_1 {
+        margin-bottom: 20px;
+    }
+
     form {
         width: 70%;
     }
 
-    #mentimeter_1_om_div_1>div {
+    body #mentimeter_1_om_div_1>div {
         flex-direction: column;
     }
 
@@ -90,7 +105,7 @@
 /* Mentimeter 1 inner div 2 */
 #mentimeter_1_in_div_2 {
     width: 50%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     font-size: 0.9rem;
     font-weight: 600;
     font-family: var(--MentiDisplay);
@@ -99,7 +114,7 @@
 form {
     width: 80%;
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 form div {
@@ -111,10 +126,14 @@ form input {
     padding: 6px 0px 6px 6px
 }
 
+form>div {
+    padding-bottom: 10px;
+}
+
 #mentimeter_1_form_div {
     display: flex;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #mentimeter_1_form_div>div {
@@ -265,6 +284,10 @@ form input {
     font-size: 1.4rem;
 }
 
+.span {
+    display: none;
+}
+
 @media all and (min-width: 581px) and (max-width: 990px) {
     #mentimeter_2_om_div {
         width: 95%;
@@ -299,12 +322,14 @@ form input {
 
 
 
-ul {
+#mentimeter_1_om_div_1 ul,
+#mentimeter_4_om_div_1 ul {
     list-style: none;
     /* Remove default bullets */
 }
 
-ul li::before {
+#mentimeter_1_om_div_1 ul li::before,
+#mentimeter_4_om_div_1 ul li::before {
     content: "\2022";
     color: #00db91;
     font-weight: bolder;

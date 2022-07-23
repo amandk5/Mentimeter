@@ -113,6 +113,7 @@
                                 </div>
                             </div>
                             <div>
+                                <span id="cart_which_plan"></span>
                                 <span>By upgrading, you agree to our </span>
                                 <span> <a href="https://www.mentimeter.com/terms"> terms of use</a></span>
                                 <span>and </span>
@@ -164,19 +165,6 @@
 </body>
 
 </html>
-<script>
-    const GetById = (id) => {
-        return document.getElementById(id)
-    }
-    const add_vat_number = GetById("Add_vat_number")
-    const Adding_vat_number = GetById("Adding_vat_number")
-    // let details_string = `You're now upgrading to ${plan_name} and will be charged $${plan_cost} + VAT annually until you cancel your subscription.`
-    add_vat_number.addEventListener("click", () => {
-        add_vat_number.style.display = "none"
-        Adding_vat_number.style.display = "block"
-    })
-    Adding_vat_number.addEventListener("click", () => {
-        add_vat_number.style.display = "block"
-        Adding_vat_number.style.display = "none"
-    })
+<script src="scripts/cart.js">
+
 </script>

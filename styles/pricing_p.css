@@ -24,9 +24,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--button_blue);
-    box-shadow: rgba();
+
+
     border-radius: 20px;
+}
+
+#switch_buttons_2 {
+    background-color: #196cff;
+    color: white
+}
+
+#switch_buttons>div:hover {
+    cursor: pointer;
 }
 
 #switch_buttons>div:first-child {
@@ -174,7 +183,7 @@
     border-radius: 6px
 }
 
-@media all and (min-width: 740px) and (max-width: 1200px) {
+@media all and (min-width: 320px) and (max-width: 1200px) {
     #Metimeter_heading_1 {
         font-size: 1.1rem;
     }
@@ -190,7 +199,7 @@
         align-items: none;
         justify-content: none;
         width: 90%;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         margin-top: 40px;
     }
 
@@ -213,7 +222,7 @@
     }
 
     .Diff_plans_mentimeter_plans>div {
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width: 100%;
         margin: 20px 0px;
     }
