@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cantarell:ital@1&family=Mukta:wght@700&family=Open+Sans:wght@300&family=Poppins:wght@600;800&family=Roboto:ital@1&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/34a5413d64.js" crossorigin="anonymous"></script>
     <style>
         body{
             margin: 0;
@@ -25,14 +26,16 @@
             height: 500px
         }
         #right{
-            width: 80%;
+            width: 75%;
             height: auto;
             /* border: 1px solid black; */
         }
         #left{
-            width: 20%;
+            width: 25%;
             height: auto;
             /* border:  1px solid black; */
+            padding-top: 120px;
+            
         }
         #tempBox{
             display: flex;
@@ -176,6 +179,31 @@ background-color: white;
             margin-left: 50px;
             margin-top: 20px;
         }
+        #left>div{
+            display: flex;
+            width: 80%;
+            height: 50px;
+            /* border: 1px solid black; */
+            align-items: center;
+            margin-left: 25px;
+            justify-content: space-between;
+            
+        }
+        #left>div:hover{
+
+            color: rgb(46, 20, 195);
+        }
+        .leftbar{
+
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .fa-solid {
+            font-weight: bolder;
+        }
+        #blue{
+             color: rgb(46, 20, 195);
+        }
     </style>
 
     <title>Document</title>
@@ -187,7 +215,40 @@ background-color: white;
     </div>
 
     <div id="tempBox">
-       <div id="left"></div>
+       <div id="left">
+
+        <div> <p class="leftbar" id="blue">Explore</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div><p class="leftbar">Business & Meetings </p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div>
+            <p class="leftbar">Education</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div>
+            <p class="leftbar">Quizzes</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div>
+            <p class="leftbar">Icebreakers</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div>
+            <p class="leftbar">Polls</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div>
+            <p class="leftbar">Surveys</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div>
+            <p class="leftbar">Fun & Games</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+
+       </div>
  
        <div id="right">
              <h2 id="h2">Featured</h2>        

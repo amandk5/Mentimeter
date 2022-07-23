@@ -41,7 +41,7 @@ document.querySelector("#rTop1").addEventListener("mouseenter",function(){
 
      btn1=document.createElement("button")
      btn1.innerText="Add Template"
-     btn1.style.marginTop="200px"
+     btn1.style.marginTop="180px"
      btn1.style.fontSize="22px"
      btn1.style.marginRight="22px"
      btn1.style.fontWeight="bold"
@@ -50,10 +50,14 @@ document.querySelector("#rTop1").addEventListener("mouseenter",function(){
      btn1.style.border="0"
      btn1.style.padding="10px 10px 10px 10px"
 
-     btn1.addEventListener("click",addTemp)
+     btn1.addEventListener("click",function(){
 
-     function addTemp(){
-        console.log("yes")
+        addtemp1()
+     })
+     function addtemp1(){
+         
+        window.location.href="template.html"
+    
      }
 
       
@@ -111,6 +115,16 @@ document.querySelector("#rTop2").addEventListener("mouseenter",function(){
      btn1.style.color="white"
      btn1.style.border="0"
      btn1.style.padding="10px 10px 10px 10px"
+
+     btn1.addEventListener("click",function(){
+
+        addtemp2()
+     })
+     function addtemp2(){
+         
+        window.location.href="template.html"
+    
+     }
      
      btn2=document.createElement("button")
      btn2.innerText= "Preview"
@@ -163,6 +177,15 @@ document.querySelector("#rBot1").addEventListener("mouseenter",function(){
      btn1.style.color="white"
      btn1.style.border="0"
      btn1.style.padding="10px 10px 10px 10px"
+     btn1.addEventListener("click",function(){
+
+        addtemp()
+     })
+     function addtemp(){
+         
+        window.location.href="template.html"
+    
+     }
      
      btn2=document.createElement("button")
      btn2.innerText= "Preview"
