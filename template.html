@@ -29,9 +29,9 @@
             border-top: 1px solid gainsboro;
             border-bottom: 1px solid gainsboro;
         }
-        #navbar>div{
+        /* #navbar>div{ */
             /* border: 1px solid black; */
-        }
+        /* } */
         #navbar>div:first-child>h3,p{
             margin: 3px ;
         }
@@ -153,7 +153,7 @@
             height: 80vh;
         }
         #main>div{
-            border: 1px solid black;
+            border: 1px solid var(--grey);
         }
         /* slide page*/
         #slide_page{
@@ -197,6 +197,7 @@
         /* main slide  */
         #main_slide{
             padding: 20px;
+            background-color: rgb(236, 232, 232);
         }
         #main_slide>div{
             width: 100%;
@@ -367,7 +368,7 @@
                 </span>
                 <h2>New Slide</h2>
             </button>
-            <button>
+            <button id="go_back">
                 <span>
                     <img src="https://www.iconsdb.com/icons/download/black/upload-3-32.png" width="13px" height="13px"/>
                 </span>
@@ -776,11 +777,9 @@ document.getElementById("dec").addEventListener("click", ()=> {
     heading.style.fontSize = `${font}px`;
 })
 
-// set caption and heading to ls 
-// let heading_video = document.querySelector("#heading>input").value;
-// if(heading_video!==null){
-//     localStorage.setItem("heading",JSON.stringify(heading_video));
-// }
+document.getElementById("go_back").addEventListener("click", () => {
+    window.location.href="template_folder.html";
+})
 
 </script>
 <script src="./scripts/styleType.js"></script>
