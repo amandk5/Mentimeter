@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Template Folder</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0px;
+        }
+        #navbar{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid gainsboro;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        #logoDiv{
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        #logo{
+            width: 25px;
+            height: 25px;
+        }
+        #logoDiv_right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 5px;
+        }
+        #upgrade{
+            display: flex;
+            align-items: center;
+            background-color: rgb(137, 220, 192);
+            border: none;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        #person{
+            width: 34px;
+            height: 34px;
+            border-radius: 17px;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(237, 237, 106, 0.86);
+            border: none;
+        }
+        #upgrade:hover{
+            background-color: rgb(0, 219, 145);
+        }
+        #person:hover{
+            background-color: rgba(235, 235, 3, 0.86);
+        }
+        /* main page  */
+        #mainPage{
+            height: 90vh;
+            display: flex;
+            /* border: 1px solid black; */
+        }
+        #sidebar{
+            width: 15%;
+            /* border: 1px solid black; */
+            padding: 0px 10px;
+        }
+        p{
+            font-weight: bold;
+            font-size: small;
+        }
+        #sidebar_my_presentation{
+            color: dodgerblue;
+        }
+        #folderView{
+            width: 100%;
+            padding: 0px 10px;
+            border-left: 2px solid gainsboro;
+        }
+        #presentation_div{
+            margin-top: 25px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #presentation_subDiv1>button{
+            margin-right: 5px;
+            padding: 5px;
+        }
+        #presentation_subDiv2>input,select{
+            padding: 5px;
+        }
+        /* folder data  */
+        #folderData_head{
+            display: flex;
+            margin-left: 1.5%;
+            gap: 25%;
+            border-bottom: 2px solid gainsboro;
+        }
+        #folderData{
+            display: flex;
+            margin-left: 9px;
+            gap: 20%;
+        }
+        .checkbox_name{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            column-gap: 5px;
+        }
+        #video{
+            padding: 0;
+            border-radius:50% ;
+            background-color: rgb(214, 211, 211);
+            cursor: pointer;
+        }
+        #video:hover{
+            background-color: dodgerblue;
+            color: white;
+        }
+        #new_presentation{
+            background-color: dodgerblue;
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+        #new_folder{
+            background-color: gainsboro;
+            color: black;
+            border: none;
+            font-weight: bold;
+        }
+        #open_template{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="navbar">
+        <div id="logoDiv">
+            <div id="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid meet" width="100%" height="100%" viewBox="0 0 803.87 676.39"><title>Mentimeter Logo</title><g fill="#000000"><polygon fill="#FFB9D0" points="67.06 663 532.44 663 201.01 0 67.06 0 67.06 663"></polygon><polygon fill="#196CFF" points="602.86 0 602.86 133.95 468.91 133.95 468.91 267.9 334.96 267.9 334.96 663 736.81 663 736.81 0 602.86 0"></polygon><path fill="#FF80AB" d="M67.06,267.9V663H468.85C465.23,444.16,286.73,267.9,67.06,267.9Z"></path><path fill="#FF403D" d="M67.06,468.82V662.9h200.8C264.25,555.11,175.74,468.82,67.06,468.82Z"></path></g></svg>
+            </div>
+            <h1>Mentimeter</h1>
+        </div>
+        <div id="logoDiv_right">
+            <button id="upgrade">
+                <span class="material-symbols-outlined">star</span>
+                <i>Upgrade</i>
+            </button>
+            <span class="material-symbols-outlined">help</span>
+            <button id="person">
+                <span class="material-symbols-outlined">person</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="mainPage">
+        <div id="sidebar">
+            <p id="sidebar_my_presentation">My Presentations</p>
+            <p>Templates</p>
+            <p>Branding & Colors</p>
+        </div>
+        <div id="folderView">
+            <p>My Presentations</p>
+            <div id="presentation_div">
+                <div id="presentation_subDiv1">
+                    <button id="new_presentation">+ New Presentation</button>
+                    <button id="new_folder">+ New Folder</button>
+                </div>
+                <div id="presentation_subDiv2">
+                    <input type="text" placeholder="Type to search" id="search_query">
+                    <select id="show_everything">
+                        <option value="">Show Everything</option>
+                        <option value="">Owned by me</option>
+                        <option value="">Shared by me</option>
+                        <option value="">Shared with me</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div id="folderData_head">
+                    <div class="checkbox_name">
+                        <input type="checkbox" name="" class="select_box">
+                        <p class="name">Name</p>                        
+                    </div>
+                    <p>Owner</p>
+                    <p>Modified</p>
+                    <p>Created</p>
+                </div>
+                <div id="folderData">
+                    <div class="checkbox_name">
+                        <input type="checkbox" name="" class="select_box">
+                        <span id="video" class="material-symbols-outlined">play_arrow</span>
+                        <p class="name" id="open_template">Presentation</p>
+                    </div>
+                    <p>Me</p>
+                    <p>Today</p>
+                    <p>July 23,2022</p>
+                    <p>...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("open_template").addEventListener("click", () => {
+        window.location.href = "template.html";
+    })
+</script>
