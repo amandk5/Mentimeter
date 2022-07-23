@@ -20,6 +20,7 @@ function myFunction() {
     alert("You Are Successfully Logged In.");
     localStorage.setItem("system","online");
     window.location.href = "index.html";
+    
   } else {
     alert("Wrong ID/Password");
 
