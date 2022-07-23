@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cantarell:ital@1&family=Mukta:wght@700&family=Open+Sans:wght@300&family=Poppins:wght@600;800&family=Roboto:ital@1&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/34a5413d64.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #maindiv{
+
+            width: 100%;
+            height: auto;
+           
+            margin-top: 100px;
+        }
+        img{
+            width: 100%;
+            height: 500px
+        }
+        #right{
+            width: 75%;
+            height: auto;
+            /* border: 1px solid black; */
+        }
+        #left{
+            width: 25%;
+            height: auto;
+            /* border:  1px solid black; */
+            padding-top: 120px;
+            
+        }
+        #tempBox{
+            display: flex;
+            width: 100%;
+            height: auto;
+            /* border:  1px solid black; */
+            margin-top: 100px;
+
+        }
+        #rTop{
+            display: flex;
+            width: 100%;
+            height: 500px;
+           
+            justify-content: space-between;
+        }
+        h2{
+            display: block;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 40px;
+            font-weight: bolder;
+            margin-left: 50px;
+        }
+        #rTop>div{
+            width: 45%;
+            height: 81%;
+            border: 1px solid whitesmoke;
+            margin-top: 0px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #rTop1{
+background-color: palevioletred;
+        }
+        #rTopimg1{
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            width: 80%;
+            height: 80%;
+            border-radius: 10px;
+        }
+        #rTopimg2{
+            height: 80%;
+            border-radius: 10px;
+        }
+        p{
+            font-size: 28px;
+           margin-left: 10px;
+           margin-top: -1px;
+        }
+        .white{
+            width: 100%;
+            height: 20%;
+            background-color: white;
+            margin-top: -10px;
+        }
+        #rBot{
+            display: flex;
+            width: 100%;
+            height: 500px;
+           
+            justify-content: space-between;
+        }
+       
+        #rBot>div{
+            width: 30%;
+            height: 81%;
+            border: 1px solid whitesmoke;
+            margin-top: 0px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #rBot1{
+background-color: white;
+        }
+        #rBotimg1{
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            
+            height: 80%;
+            border-radius: 10px;
+        }
+        #rBotimg2{
+            height: 80%;
+            border-radius: 10px;
+        }
+        #rBotimg3{
+            height: 80%;
+            border-radius: 10px;
+        }
+        .smallp{
+            display: block;
+            font-size: 20px;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        #rnech{
+            display: flex;
+            width: 100%;
+            height: 500px;
+           
+            justify-content: space-between;
+        }
+       
+        #rnech>div{
+            width: 30%;
+            height: 81%;
+            border: 1px solid whitesmoke;
+            margin-top: 0px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #rnech1{
+background-color: white;
+        }
+        #rnechimg1{
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            padding-bottom: 20px;
+           
+            height: 80%;
+            border-radius: 10px;
+        }
+        #rnechimg2{
+            height: 80%;
+            border-radius: 10px;
+        }
+        #rnechimg3{
+            height: 80%;
+            border-radius: 10px;
+        }
+        .smallp{
+            display: block;
+            font-size: 20px;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        #left>div{
+            display: flex;
+            width: 80%;
+            height: 50px;
+            /* border: 1px solid black; */
+            align-items: center;
+            margin-left: 25px;
+            justify-content: space-between;
+            
+        }
+        #left>div:hover{
+
+            color: rgb(46, 20, 195);
+        }
+        .leftbar{
+
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .fa-solid {
+            font-weight: bolder;
+        }
+        #blue{
+             color: rgb(46, 20, 195);
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+   
+    <div id="maindiv"> 
+      <img src="./image/mentimeter.png" alt="">
+    </div>
+
+    <div id="tempBox">
+       <div id="left">
+
+        <div> <p class="leftbar" id="blue">Explore</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div><p class="leftbar">Business & Meetings </p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div>
+            <p class="leftbar">Education</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div>
+            <p class="leftbar">Quizzes</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div>
+            <p class="leftbar">Icebreakers</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div>
+            <p class="leftbar">Polls</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div>
+            <p class="leftbar">Surveys</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div>
+            <p class="leftbar">Fun & Games</p>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+
+       </div>
+ 
+       <div id="right">
+             <h2 id="h2">Featured</h2>        
+         <div id="rTop">
+             
+            
+            <div id="rTop1">
+                <img  id="rTopimg1" src="https://images.unsplash.com/photo-1479334053136-4dcabc560c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                <div class="white">   <p> New Term Refelction </p></div>
+            </div>
+            <div id="rTop2">
+               <img id="rTopimg2" src="./image/Hr.png" alt="">
+               <div class="white"><p>HR Employee Benefits</p></div>
+            </div>
+         </div>
+         <h2 id="h2">Business Presentation & Meeting Templates</h2>
+         <div id="rBot">
+           
+             
+            <div id="rBot1">
+                <img  id="rBotimg1" src="./image/pic3.png" alt="">
+                <div class="white">   <p class="smallp"> Business Sustainablity Workshop </p></div>
+            </div>
+            <div id="rBot2">
+               <img id="rBotimg2" src="./image/pic4.png" alt="">
+               <div class="white"><p class="smallp"> Manager And Employee Engagement</p></div>
+            </div>
+            <div id="rBot3">
+                <img id="rBotimg3" src="./image/pic8.png" alt="">
+                <div class="white"><p class="smallp">Introduction To  Employee Engagement</p></div>
+            </div>
+         </div>
+          
+      <h2>Games & Special Occasions</h2>
+         <div id="rnech">
+           
+             
+            <div id="rnech1">
+                <img  id="rnechimg1" src="./image/pic5.png" alt="">
+                <div >   <p class="smallp"> Business Sustainablity Workshop </p></div>
+            </div>
+            <div id="rnech2">
+               <img id="rnechimg2" src="./image/pic6.png" alt="">
+               <div ><p class="smallp"> Manager And Employee Engagement</p></div>
+            </div>
+            <div id="rnech3">
+                <img id="rnechimg3" src="./image/pic7.png" alt="">
+                <div ><p class="smallp">Introduction To  Employee Engagement</p></div>
+            </div>
+         </div>
+       </div>
+    </div>
+</body>
+</html>
+<script src="./scripts/index.js"></script>
+
