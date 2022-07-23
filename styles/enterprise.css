@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@300;400&family=Raleway:ital,wght@0,300;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@300;400&family=Raleway:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -25,9 +28,10 @@
 #mentimeter_1_om_div_1 {}
 
 #mentimeter_1_om_div_1>div {
-    width: 1200px;
+    width: 1100px;
     margin: auto;
     display: flex;
+    border: 1px solid black;
 }
 
 #mentimeter_1_in_div_1 {
@@ -55,17 +59,21 @@
     padding-left: 20px;
 }
 
-
-
-
-
-@media all and (min-width: 320px) and (max-width: 1280px) {
+@media all and (min-width: 1000px) and (max-width: 1280px) {
     #mentimeter_1_om_div_1>div {
-        width: 95%;
+        width: 80%;
     }
 }
 
 @media all and (min-width: 320px) and (max-width: 1000px) {
+    #mentimeter_1_in_div_1+#mentimeter_1_in_div_2 {
+        width: 100%;
+    }
+
+    form {
+        width: 70%;
+    }
+
     #mentimeter_1_om_div_1>div {
         flex-direction: column;
     }
@@ -73,11 +81,45 @@
     #mentimeter_1_in_div_1 {
         width: 100%;
     }
+
+    #mentimeter_1_in_div_1>div {
+        width: 100%;
+    }
 }
 
 /* Mentimeter 1 inner div 2 */
-#mentimeter_1_in_div_2 {}
+#mentimeter_1_in_div_2 {
+    width: 50%;
+    border: 2px solid green;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: var(--MentiDisplay);
+}
 
+form {
+    width: 80%;
+    margin: auto;
+    border: 1px solid red;
+}
+
+form div {
+    width: 100%;
+}
+
+form input {
+    width: 95%;
+    padding: 6px 0px 6px 6px
+}
+
+#mentimeter_1_form_div {
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#mentimeter_1_form_div>div {
+    width: 50%;
+}
 
 #mentimeter_2_in_div_1 {
     border: 1px solid black;
@@ -165,51 +207,15 @@
 #mentimeter_4_om_div {
     width: 1000px;
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #mentimeter_4_om_div>div {
     display: flex;
 }
 
-
-
-@media all and (min-width: 581px) and (max-width: 990px) {
-    #mentimeter_2_om_div {
-        width: 95%;
-
-    }
-
-    #mentimeter_4_om_div {
-        width: 90%;
-        padding: 4px;
-    }
-
-    #mentimeter_4_om_div>div {
-        width: 100%;
-        border: 2px solid red;
-        padding: 4px;
-        display: grid;
-        grid-template-columns: repeat(1, 90vw);
-        grid-template-rows: 100vw auto;
-    }
-
-    #mentimeter_4_div_img {
-        border: 2px solid violet;
-        padding: 4px;
-        width: 90vw;
-        display: block;
-    }
-
-    #mentimeter_4_div_li {
-        width: 100%;
-    }
-}
-
-
-
 #mentimeter_4_div_img {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 50%;
     display: flex;
     justify-content: center;
@@ -217,7 +223,7 @@
 }
 
 #mentimeter_4_div_li {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 50%;
 }
 
@@ -259,6 +265,56 @@
     font-size: 1.4rem;
 }
 
+@media all and (min-width: 581px) and (max-width: 990px) {
+    #mentimeter_2_om_div {
+        width: 95%;
+
+    }
+
+    #mentimeter_4_om_div {
+        width: 90%;
+        padding: 4px;
+    }
+
+    #mentimeter_4_om_div_1>#mentimeter_4_om_div>div {
+        flex-direction: column;
+    }
+
+    #mentimeter_4_om_div>div>div {
+        width: 100%;
+    }
+
+    .mentimeter_4_div_li_span_1 {
+        font-size: 1.2rem;
+    }
+
+    .mentimeter_4_div_li_span_2 {
+        font-size: 1.2rem;
+    }
+
+    #mentimeter_4_div_li_div_1>ul {
+        margin-left: 20px;
+    }
+}
+
+
+
+ul {
+    list-style: none;
+    /* Remove default bullets */
+}
+
+ul li::before {
+    content: "\2022";
+    color: #00db91;
+    font-weight: bolder;
+
+    display: inline-block;
+
+    width: 1em;
+
+    margin-left: -1.5em;
+}
 
 @media all and (min-width: 581px) and (max-width: 990px) {
     #mentimeter_2_om_div {
@@ -279,6 +335,31 @@
 
     #mentimeter_3_in_div_2 {
         font-size: 0.8rem;
+    }
+
+    #mentimeter_4_om_div {
+        width: 90%;
+        padding: 4px;
+    }
+
+    #mentimeter_4_om_div_1>#mentimeter_4_om_div>div {
+        flex-direction: column;
+    }
+
+    #mentimeter_4_om_div>div>div {
+        width: 100%;
+    }
+
+    .mentimeter_4_div_li_span_1 {
+        font-size: 1rem;
+    }
+
+    .mentimeter_4_div_li_span_2 {
+        font-size: 1rem;
+    }
+
+    #mentimeter_4_div_li_div_1>ul {
+        margin-left: 20px;
     }
 }
 
