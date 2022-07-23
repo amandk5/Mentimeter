@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/Cart_styles_1.css">
+</head>
+
+<body>
+    <div id="cart_om_layer">
+        <div id="cart_nav"></div>
+
+        <div id="cart_main_layer">
+            <p>Nearly there! You are almost on Mentimeter Pro!</p>
+            <!--          cart_section  div             -->
+            <div id="cart_om_section">
+                <div id="cart_in_section_1">
+                    <div>
+                        <p>Pay with credit or debit card</p>
+                        <h4>Card details</h4>
+                        <div id="section_1_form_type">
+                            <label for="Card_number">Card number</label><br>
+                            <input type="text" name="Card_number" id="card_number" placeholder="1111 2222 3333 4444">
+                            <div id="section_1_form_type_double_div">
+                                <div>
+                                    <label for="Expiration_date">Expiration date</label><br>
+                                    <input type="text" name="Expiration_date" id="expiration_date" placeholder="MM/YY">
+                                </div>
+                                <div>
+                                    <label for="CVV">CVV</label><br>
+                                    <input type="text" name="CVV" id="cvv" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+                        <button id="Add_vat_number">
+                            Add VAT Number
+                        </button>
+
+                        <div id="Adding_vat_number" style="display: none;">
+                            <label for="">VAT number</label>
+                            <input type="text" name="" id="" placeholder="AA000000"><br>
+                            <button id="remove_vat_number">Remove VAT number</button>
+                        </div>
+                    </div>
+                    <div id="bank_transfer" style="margin: 15px auto 0px auto ;padding: 0;width: 90%; border: none;">
+                        <p>Pay via bank transfer?</p>
+                    </div>
+
+                </div>
+                <div id="cart_in_section_2">
+                    <div>
+                        <p>Mentimeter Pro</p>
+                        <div>
+
+                            <label for="Number_of_team_members">Number of team members</label><br>
+                            <div id="Number_of_team_members_div">
+                                <button id="Number_of_team_members_butt_1">-</button>
+                                <input type="number" name="Number_of_team_members" id="Number_of_team_members">
+                                <button id="Number_of_team_members_butt_2">+</button>
+                            </div>
+
+                            <div id="cart_details">
+                                <div class="cart_section_2_info">
+                                    <div class="cart_section_2_info_1">
+                                        <p>Account</p>
+                                    </div>
+                                    <div class="cart_section_2_info_2">
+                                        <p id="acc">akshdf</p>
+                                    </div>
+                                </div>
+                                <div class="cart_section_2_info">
+                                    <div class="cart_section_2_info_1">
+                                        <p>Billing cycle</p>
+                                    </div>
+                                    <div class="cart_section_2_info_2">
+                                        <p id="bill_cycle"> asd</p>
+                                    </div>
+                                </div>
+                                <div class="cart_section_2_info">
+                                    <div class="cart_section_2_info_1">
+                                        <p>Number of licenses</p>
+                                    </div>
+                                    <div class="cart_section_2_info_2">
+                                        <p id="no_of_licenses">adsgads</p>
+                                    </div>
+                                </div>
+                                <div class="cart_section_2_info">
+                                    <div class="cart_section_2_info_1">
+                                        <p>Plan price</p>
+                                    </div>
+                                    <div class="cart_section_2_info_2">
+                                        <p id="price_plan">adga</p>
+                                    </div>
+                                </div>
+                                <div class="cart_section_2_info">
+                                    <div class="cart_section_2_info_1">
+                                        <p>VAT 0%</p>
+                                    </div>
+                                    <div class="cart_section_2_info_2">
+                                        <p id="VAT_percentage">adsga</p>
+                                    </div>
+                                </div>
+                                <div class="cart_section_2_info">
+                                    <div class="cart_section_2_info_1">
+                                        <p>Total billed now</p>
+                                    </div>
+                                    <div class="cart_section_2_info_2">
+                                        <p id="total_bill">fasdf</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <span>By upgrading, you agree to our </span>
+                                <span> <a href="https://www.mentimeter.com/terms"> terms of use</a></span>
+                                <span>and </span>
+                                <span><a href="https://www.mentimeter.com/policies"> policies</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button id="upgrade_butt">Upgrade</button>
+                    </div>
+                </div>
+            </div>
+            <div id="cart_foot">
+                <div>
+                    <div id="cart_foot_head">Mentimeter Pro top features:</div>
+                    <div id="cart_foot_body">
+                        <div>
+                            <div class="cart_foot_body_class">
+                                <p>✔️ Unlimited questions per presentation</p>
+                            </div>
+                            <div class="cart_foot_body_class">
+                                <p>✔️ Remove Mentimeter branding</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="cart_foot_body_class">
+                                <p>✔️ Add your own logotype</p>
+                            </div>
+                            <div class="cart_foot_body_class">
+                                <p>✔️ Moderate Q&A sessions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cart_foot_footer">
+                    <div>
+                        <img src="https://s3.amazonaws.com/braintree-badges/braintree-badge-dark.png" width="164px"
+                            height="44px" alt="">
+                    </div>
+                    <div>
+                        <p>SSl Secure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    const GetById = (id) => {
+        return document.getElementById(id)
+    }
+    const add_vat_number = GetById("Add_vat_number")
+    const Adding_vat_number = GetById("Adding_vat_number")
+    // let details_string = `You're now upgrading to ${plan_name} and will be charged $${plan_cost} + VAT annually until you cancel your subscription.`
+    add_vat_number.addEventListener("click", () => {
+        add_vat_number.style.display = "none"
+        Adding_vat_number.style.display = "block"
+    })
+    Adding_vat_number.addEventListener("click", () => {
+        add_vat_number.style.display = "block"
+        Adding_vat_number.style.display = "none"
+    })
+</script>
