@@ -12,3 +12,16 @@ for (let i = 0; i < signindataname.length; i++) {
     signin.style.color = "blue";
   }
 }
+let GetById_n = (id) => {
+  return document.getElementById(id)
+}
+let nav_menuclick = () => {
+  let pop_div = GetById_n("pop_div").style
+  pop_div.display = "block"
+  pop_div.position = "sticky"
+  GetById_n("navbar_container_nav").style.display = "none"
+}
+GetById_n("nav_pop_up").addEventListener("click", () => {
+  nav_menuclick()
+})
+
