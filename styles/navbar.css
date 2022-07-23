@@ -208,3 +208,13 @@ nav .nav_wrapper {
 #navbar_container_nav>#menu1>nav>.nav_wrapper>.nav-links_nav>li>p>span {
   float: right
 }
+
+@media all and (min-width:320px) and (max-width:1000px) {
+  #navbar_container_nav #menu1 {
+    display: none;
+  }
+
+  #navbar_container_nav #menu2 {
+    display: none;
+  }
+}

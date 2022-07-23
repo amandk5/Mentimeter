@@ -1,8 +1,6 @@
 let signinArr = JSON.parse(localStorage.getItem("signupKey")) || [];
 document.querySelector("form").addEventListener("submit", myFunction);
 
-console.log(signinArr);
-
 function myFunction() {
   event.preventDefault();
   let EmailAdd = document.querySelector("#email").value;
@@ -18,7 +16,7 @@ function myFunction() {
 
   if (flag) {
     alert("You Are Successfully Logged In.");
-    localStorage.setItem("system","online");
+    localStorage.setItem("system", "online");
     window.location.href = "index.html";
   } else {
     alert("Wrong ID/Password");
