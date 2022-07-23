@@ -2,18 +2,17 @@
   padding: 0%;
   margin: 0%;
 }
-#navbar_container {
+#navbar_container_nav {
   display: flex;
   justify-content: space-around;
   border: 1px solid transparent;
   padding: 10px;
   font-size: 20px;
-  position: sticky;
+  /* position:fixed; */
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-#navbar_container > #logo {
+#navbar_container_nav>#logo {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -24,64 +23,62 @@
   padding: 0px;
   height: 50px;
 }
-#navbar_container > #logo > a {
+#navbar_container_nav>#logo>a {
   display: flex;
   justify-content: center;
   text-align: center;
   margin: 0px;
   padding: 0px;
 }
-#navbar_container > #logo > a > img {
+#navbar_container_nav>#logo>a>img {
   padding: 0px;
   margin-top: 0px;
   width: 80%;
-
   margin: auto;
 }
-#navbar_container > #logo > a {
+#navbar_container_nav>#logo>a {
   color: black;
   text-decoration: none;
 }
-#navbar_container > #menu1 {
+#navbar_container_nav>#menu1 {
   display: flex;
   border: 1px solid transparent;
 }
-#navbar_container > #menu2 {
+#navbar_container_nav>#menu2 {
   width: 20%;
   display: flex;
   border: 1px solid transparent;
-  justify-content: center;
-  /*align-items: center; */
-  /* justify-content: space-evenly; */
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-evenly;
 }
-#navbar_container > #menu2 > p {
+#navbar_container_nav>#menu2>p {
   width: 40%;
   padding: 10px;
   border: 1px solid transparent;
-
-  /* display: flex;
-        justify-content: center; */
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-#navbar_container > #menu2 > p:nth-child(2) {
+#navbar_container_nav>#menu2>p:nth-child(2) {
   background-color: blue;
   border-radius: 5px;
   padding: 0px;
   margin-top: 0px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  /* display: flex;
+    justify-content: center;
+    text-align: center; */
 }
-#navbar_container > #menu2 > p:nth-child(2) a {
+#navbar_container_nav>#menu2>p:nth-child(2) a {
   color: white;
   margin: auto;
 }
-#navbar_container > #menu2 > p > a {
+#navbar_container_nav>#menu2>p>a {
   color: black;
   text-decoration: none;
+  font-size: 1rem;
 }
-
-nav .wrapper {
+nav .nav_wrapper {
   position: relative;
   padding: 0 40px;
   width: 80%;
@@ -90,20 +87,16 @@ nav .wrapper {
   display: flex;
   align-items: center;
 }
-
-.nav-links {
+.nav-links_nav {
   background: white;
-
   padding: 0;
-  box-shadow: 0;
+  box-shadow: 0
 }
-
-.wrapper {
+.nav_wrapper {
   width: 100%;
   padding: 0;
 }
-
-.nav-links > li {
+.nav-links_nav>li {
   border: 1px solid transparent;
   list-style: none;
   background: white;
@@ -112,7 +105,7 @@ nav .wrapper {
   padding: 10px;
   margin: 0px;
 }
-.nav-links > li li {
+.nav-links_nav>li li {
   border: 1px solid transparent;
   list-style: none;
   background: white;
@@ -121,29 +114,24 @@ nav .wrapper {
   padding: 10px;
   margin: 0px;
 }
-
-.wrapper .nav-links {
+.nav_wrapper .nav-links_nav {
   display: inline-flex;
 }
-
-.nav-links li a {
+.nav-links_nav li a {
   color: black;
   text-decoration: none;
-
   border-radius: 5px;
-
   transition: all 0.3 s ease;
 }
-.nav-links p:hover {
+.nav-links_nav p:hover {
   color: blue;
   cursor: pointer;
 }
-.nav-links li a:hover {
+.nav-links_nav li a:hover {
   color: blue;
   cursor: pointer;
 }
-
-.nav-links .drop_menu1 {
+.nav-links_nav .drop_menu1_nav {
   width: 270px;
   opacity: 0;
   visibility: hidden;
@@ -151,28 +139,23 @@ nav .wrapper {
   line-height: 15px;
   position: absolute;
 }
-
-.nav-links li:hover .drop_menu1 {
+.nav-links_nav li:hover .drop_menu1_nav {
   opacity: 1;
   visibility: visible;
   top: 45px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: all 0.3s ease;
   width: 30%;
-
   font-size: 18px;
 }
-
-.drop_menu1 li a {
+.drop_menu1_nav li a {
   width: 100%;
   display: block;
-
   margin-bottom: 0;
 }
-
-#navbar_container > #menu1 > nav > .wrapper > .nav-links > li > p {
+#navbar_container_nav>#menu1>nav>.nav_wrapper>.nav-links_nav>li>p {
   display: flex;
 }
-#navbar_container > #menu1 > nav > .wrapper > .nav-links > li > p > span {
-  float: right;
+#navbar_container_nav>#menu1>nav>.nav_wrapper>.nav-links_nav>li>p>span {
+  float: right
 }
