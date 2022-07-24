@@ -9,6 +9,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cantarell:ital@1&family=Mukta:wght@700&family=Open+Sans:wght@300&family=Poppins:wght@600;800&family=Roboto:ital@1&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/34a5413d64.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
         body{
             margin: 0;
@@ -21,10 +26,15 @@
            
             margin-top: 100px;
         }
-        img{
+        #maindiv>img{
             width: 100%;
             height: 500px
         }
+        /* img:not(#navbar img, #footer img){
+            width: 100%;
+            height: 500px
+        } */
+
         #right{
             width: 75%;
             height: auto;
@@ -209,7 +219,9 @@ background-color: white;
     <title>Document</title>
 </head>
 <body>
-   
+   <div id="navbar">
+
+   </div>
     <div id="maindiv"> 
       <img src="./image/mentimeter.png" alt="">
     </div>
@@ -301,7 +313,19 @@ background-color: white;
          </div>
        </div>
     </div>
+
+    <div id="footer"></div>
+
 </body>
 </html>
 <script src="./scripts/index.js"></script>
+<script type="module">
+  import navbar from "./components/navbar.js";
+  document.querySelector("#navbar").innerHTML += navbar();
+
+  import footer from "./components/footer.js";
+  document.querySelector("#footer").innerHTML += footer();
+</script>
+<script  src="scripts/navbar_functionality.js"></script>
+
 
