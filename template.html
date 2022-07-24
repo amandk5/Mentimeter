@@ -14,6 +14,8 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
     <style>
         :root{
             --blue:rgb(25, 108, 255);
@@ -70,12 +72,12 @@
             border-top-left-radius: 0.25rem;
             border-bottom-left-radius: 0.25rem;
         }
-        #navbar>div:last-child>button:first-child>h2{
+        #navbar>div:last-child>button:first-child>h3{
             margin: 5px;
             padding: 0;
             margin-left: 5px;
         }
-        #navbar>div:last-child>button:nth-child(2)>h2{
+        #navbar>div:last-child>button:nth-child(2)>h3{
             margin: 5px;
             padding: 0;
             margin-left: 5px;
@@ -117,7 +119,7 @@
             border: none;
             border-radius: 0.25rem;
         }
-        #navbar-2-left>button>h2{
+        #navbar-2-left>button>h3{
             padding: 0px 5px;
             font-weight: normal;
         }
@@ -140,9 +142,9 @@
             align-items: center;
             font-weight: normal;
         }
-        #navbar-2-right>div>span{
+        /* #navbar-2-right>div>span{
             margin-top: 5px;
-        }
+        } */
         #navbar-2-right>div>h3{
             font-weight: normal;
         }
@@ -330,28 +332,37 @@
             height: 80%;
             color: #fefefe;        
         }
+        /* add image  */
+        #image{
+            display: flex;
+            border: 1px solid black;
+            padding:1px 5px;
+            background-color: rgb(241, 240, 240);
+        }
+        #image:hover{
+            cursor: pointer;
+            background-color: rgb(227, 224, 224);
+        }
+        #img{
+            border: none;
+        }
     </style>
 </head>
 <body>
     <div id="navbar">
         <div>
             <!-- <h3> -->
-                <input type="text" placeholder="" id="quiz_name" value="Chemistry Quiz">
+                <input type="text" id="quiz_name" value="Presentation">
             <!-- </h3> -->
-            <p>Created by Aman</p>
+            <p>Created by Presentor</p>
         </div>
         <div>
             <button>
-                <span>
-                    <img src="https://www.iconsdb.com/icons/download/black/sharethis-24.png" width="15px" height="15px"/>
-                </span>
-                <h2>Share</h2>
-            </button>
+                <span class="material-symbols-outlined">share</span>
+                <h3>Share</h3>
             <button id="myBtn">
-                <span>
-                    <img src="https://www.iconsdb.com/icons/download/white/play-32.png" width="15px" height="15px"/>
-                </span>
-                <h2>Present</h2>
+                <span class="material-symbols-outlined">play_arrow</span>
+                <h3>Present</h3>
             </button>
             <select name="" id="">
                 <option value=""></option>
@@ -363,16 +374,12 @@
     <div id="navbar-2">
         <div id="navbar-2-left">
             <button id="new_slide">
-                <span>
-                    <img src="https://www.iconsdb.com/icons/download/white/plus-16.png" width="11px" height="11px"/>
-                </span>
-                <h2>New Slide</h2>
+                <span class="material-symbols-outlined">add</span>
+                <h3>New Slide</h3>
             </button>
             <button id="go_back">
-                <span>
-                    <img src="https://www.iconsdb.com/icons/download/black/upload-3-32.png" width="13px" height="13px"/>
-                </span>
-                <h2>Import</h2>
+                <span class="material-symbols-outlined">file_upload</span>
+                <h3>Import</h3>
             </button>
         </div>
         <div id="navbar-2-right">
@@ -389,9 +396,7 @@
                 <h3>Themes</h3>
             </div>
             <div id="settings">
-                <span>
-                    <img src="https://www.iconsdb.com/icons/download/black/settings-24.png" width="15px" height="15px">
-                </span>
+                <span class="material-symbols-outlined">settings</span>
                 <h3>Settings</h3>
 
             </div>
@@ -436,8 +441,10 @@
                 </div>                
                 <div>
                     <h1>T</h1>
-                    <img id="dec" src="https://www.iconsdb.com/icons/download/color/8C8C8C/minus-16.png" width="12px" height="5px">
-                    <img id="inc" src="https://www.iconsdb.com/icons/download/black/plus-2-16.png" width="12px" height="13px" >
+                    <span id="dec" class="material-symbols-outlined">remove</span>
+                    <!-- <img id="dec" src="https://www.iconsdb.com/icons/download/color/8C8C8C/minus-16.png" width="12px" height="5px"> -->
+                    <span id="inc" class="material-symbols-outlined">add</span>
+                    <!-- <img id="inc" src="https://www.iconsdb.com/icons/download/black/plus-2-16.png" width="12px" height="13px" > -->
                 </div>
             </div>
         </div>
@@ -532,7 +539,10 @@
                             <div id="image_div" class="for_i">
                                 <h3>Image <i>?</i> </h3>
                                 <div id="image_box">
-                                    <div id="image"> <img id="img" src="" alt="Add Picture"></div>
+                                    <div id="image"> 
+                                        <span id="img" class="material-symbols-outlined">photo_library</span>
+                                        Add Picture
+                                    </div>
                                     <button id="edit">Edit</button>
                                     <button id="remove">Remove</button>
                                 </div>
@@ -632,7 +642,7 @@
         <!-- =================================  -->
         <!-- modal  -->
         </div>
-        <!-- <h2>Modal Example</h2> -->
+        <!-- <h3>Modal Example</h3> -->
 
         <!-- Trigger/Open The Modal -->
         <!-- <button id="myBtn">Open Modal</button> -->
@@ -667,6 +677,10 @@
         display_slidepage(page);
         let mainSlide = document.querySelector("#main_slide>div:first-child");
         mainSlide.style.backgroundImage='url("https://t4.ftcdn.net/jpg/03/45/16/85/360_F_345168514_PI49D3RASetPGhbzqwLXaDDoz5avjNZy.jpg")';
+        mainSlide.style.backgroundRepeat = "no-repeat";
+        mainSlide.style.backgroundSize = "cover";
+        mainSlide.style.overflow = "hidden";
+        mainSlide.style.backgroundPosition = "center";
     })
 
     let page=[1];
