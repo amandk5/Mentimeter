@@ -6,10 +6,13 @@ let signindataname = JSON.parse(localStorage.getItem("signupKey"));
 console.log(signindataname);
 for (let i = 0; i < signindataname.length; i++) {
   if (signindata == "online") {
-    let signin = document.getElementById("menu2");
+    let signin = document.getElementById("sgn");
     signin.innerHTML = signindataname[i].oName;
     console.log(signin);
     signin.style.color = "blue";
+    let signout = document.getElementById("sgn_out");
+    signout.innerHTML = "Sign Out";
+    signout.style.fontSize = "15px"
   }
 }
 let GetById_n = (id) => {

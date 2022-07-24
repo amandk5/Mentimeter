@@ -22,7 +22,7 @@ function footer() {
                     <a href="#">Quiz</a>
                 </li>
                 <li>
-                    <a href="#">Q&A</a>
+                    <a href="Q&A.html">Q&A</a>
                 </li>
                 <li>
                     <a href="#">Survey</a>
@@ -46,7 +46,7 @@ function footer() {
                     <a href="#">Solutions</a>
                 </li>
                 <li>
-                    <a href="#">Templates</a>
+                    <a href="Rtemplate.html">Templates</a>
                 </li>
                 <li>
                     <a href="#">Academy</a>
