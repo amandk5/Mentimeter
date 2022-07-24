@@ -28,7 +28,7 @@ function navbar() {
                                 <a href="#">Quiz</a>
                             </li>
                             <li>
-                                <a href="#">Q&A</a>
+                                <a href="Q&A.html">Q&A</a>
                             </li>
                             <li>
                                 <a href="#">Survey</a>
@@ -74,7 +74,7 @@ function navbar() {
                                 <a href="#">MentiAcademy</a>
                             </li>
                             <li>
-                                <a href="#">Templates</a>
+                                <a href="Rtemplate.html">Templates</a>
                             </li>
                             <li>
                                 <a href="#">Webinars</a>
@@ -92,11 +92,11 @@ function navbar() {
                     </li>
     
                     <li>
-                        <a href="#">Pricing</a>
+                        <a href="Pricing.html">Pricing</a>
                     </li>
     
                     <li>
-                        <a href="#">Enterprise</a>
+                        <a href="Enterprise.html">Enterprise</a>
                     </li>
                 </ul>
             </div>
@@ -134,4 +134,3 @@ function navbar() {
 </div>`;
 }
 export default navbar;
-
