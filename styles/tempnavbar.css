@@ -8,9 +8,11 @@
 
 #navbar_container_nav {
   font-family: 'Raleway', sans-serif;
+  border: 1px solid black;
   display: flex;
   height: 65px;
   justify-content: space-between;
+  position: sticky;
   align-items: center;
   border: 1px solid transparent;
   font-size: 20px;
@@ -202,12 +204,38 @@ nav .nav_wrapper {
 }
 
 #pop_div {
-  display: none;
-
+  display: block;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background-color: #196cff;
   color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+#pop_div_close {
+  display: flex;
+  justify-content: end;
+  font-size: 1.8rem;
+}
+
+#pop_div_close>p {
+  display: inline-block;
+  padding: 20px 32px 32px 32px
+}
+
+#pop_div a {
+  color: white;
+  /* underline:none; */
+}
+
+.pop_div_sub_sec {
+  display: none;
+}
+
+.pop_div_sec>p,
+.pop_div_sec_2>p {
+  font-size: 2rem;
 }
 
 @media all and (min-width:320px) and (max-width:1000px) {
@@ -225,4 +253,12 @@ nav .nav_wrapper {
     display: inline-block;
     padding: 0px 30px;
   }
+}
+
+.pop_div_sub_sec {
+  padding-bottom: 10px;
+}
+
+body {
+  height: 300vh;
 }

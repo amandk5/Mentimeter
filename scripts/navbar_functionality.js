@@ -17,9 +17,14 @@ let GetById_n = (id) => {
 }
 let nav_menuclick = () => {
   let pop_div = GetById_n("pop_div").style
-  pop_div.display = "block"
-  pop_div.position = "sticky"
+  console.log("in")
+  let elems = document.body.getElementsByTagName("*");
   GetById_n("navbar_container_nav").style.display = "none"
+  for (let i of elems) {
+    i.style.display = "none"
+  }
+  pop_div.display = "block"
+
 }
 GetById_n("nav_pop_up").addEventListener("click", () => {
   nav_menuclick()
