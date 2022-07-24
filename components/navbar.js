@@ -109,28 +109,11 @@ function navbar() {
             <p >
                 <a href="signin.html" style="text-decoration: none" id="sgn">Sign In</a>
             </p>
-            <p style="padding:10px 15px; color:white;width:100px">
+            <p style="padding:10px 15px; color:white;width:100px" id="sgn_out">
                 <a href="signup.html">Sign Up</a>
             </p>
     </div>
-    <div id="nav_pop_up">
-        <img src="">
-    </div>
-    <div id="pop_div">
-        <div>
-            
-        </div>
-        <div>
-        </div>
-        <div>
-        </div>
-        <div>
-        </div>
-        <div>
-        </div>
-        <div>
-        </div>
-    </div>
+    
 </div>`;
 }
 export default navbar;
