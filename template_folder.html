@@ -23,6 +23,9 @@
             display: flex;
             align-items: center;
         }
+        #logoDiv:hover{
+            cursor: pointer;
+        }
         #logo{
             width: 25px;
             height: 25px;
@@ -211,5 +214,9 @@
 <script>
     document.getElementById("open_template").addEventListener("click", () => {
         window.location.href = "template.html";
+    })
+
+    document.getElementById("logoDiv").addEventListener("click", () => {
+        window.location.href = "index.html";
     })
 </script>
