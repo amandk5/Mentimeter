@@ -257,13 +257,57 @@
     padding: 0px 20px;
 }
 
+#success_payment {
+    width: 40%;
+    margin: auto;
+    margin-top: 15vh;
+    padding: 40px;
+    border-radius: 18px;
+    display: none;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#success_payment>img {
+    width: 80%;
+}
+
+#success_payment>p {
+    font-family: var(--oswald);
+    font-size: 2rem;
+}
+
+#success_payment>div {
+    padding: 20px 35px;
+    margin-top: 30px;
+    background-color: var(--button_blue);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+
 @media all and (min-width:320px) and (max-width:600px) {
     #cart_foot {
         font-size: 0.8rem;
     }
 
+    #success_payment>img {
+        width: 90%;
+    }
+
     #cart_main_layer>p {
         font-size: 1.5rem;
+    }
+
+    #success_payment>p {
+        font-size: 1.4rem;
+
+    }
+
+    #success_payment>div {
+        padding: 10px 25px;
+        font-size: 1.2rem;
+
     }
 }
 

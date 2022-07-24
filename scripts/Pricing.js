@@ -1,5 +1,6 @@
 import nav from "../components/navbar.js"
-document.querySelector("body").innerHTML = nav() + document.querySelector("body").innerHTML
+import footer from "../components/footer.js"
+document.querySelector("body").innerHTML = nav() + document.querySelector("body").innerHTML + footer()
 let GetById = (id) => {
     return document.getElementById(id)
 
@@ -7,7 +8,12 @@ let GetById = (id) => {
 let tick = document.getElementsByClassName("mid_con_tick")
 let cross = document.getElementsByClassName("mid_con_cross")
 let year_or_month = false
-
+let login = localStorage.getItem("system") || null
+if (login == "online") {
+    login = true
+} else {
+    login = false
+}
 const button_1 = GetById("switch_buttons_1")
 const button_2 = GetById("switch_buttons_2")
 {
@@ -162,7 +168,7 @@ prices_for_Education.addEventListener("click", () => {
         }
     }
 })
-let login = true
+
 basic_plan.addEventListener("click", () => {
     if (login) {
         if (year_or_month == false) {
@@ -255,9 +261,6 @@ const startQueries = () => {
     ifMatcheschange(media_queries_1)
 }
 window.addEventListener("scroll", () => {
-
-
-
     if (window.pageYOffset > 454 && window.pageYOffset < 2790) {
         let bottom_nav = document.getElementById("menti_meter_nav_bottom_absolute").style
         let upper_nav = document.getElementById("mentimeter_price_nav").style

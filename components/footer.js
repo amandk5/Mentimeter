@@ -1,4 +1,4 @@
-function footer(){
+function footer() {
     return `
     <div id="footer">
         <div class="box1">
@@ -32,6 +32,7 @@ function footer(){
                 </li>
             </ul>
         </div>
+        <hr class="hr_line">
         <div class="box3">
             <p>Resources</p>
             <ul class="drop_menu1">
@@ -64,6 +65,7 @@ function footer(){
                 </li>
             </ul>
         </div>
+        <hr class="hr_line">
         <div class="box4">
             <p>Details</p>
             <ul class="drop_menu1">
@@ -84,6 +86,7 @@ function footer(){
                 </li>
             </ul>
         </div>
+        <hr class="hr_line">
         <div class="box5">
             <p>About us</p>
             <ul class="drop_menu1">
@@ -113,6 +116,7 @@ function footer(){
                 </li>
             </ul>
         </div>
+        <hr class="hr_line">
         <div class="box6">
             <img src="https://th.bing.com/th/id/OIP.3GXcSSdD-QrM_8ZYz5jnOAHaJH?w=164&h=202&c=7&r=0&o=5&dpr=2&pid=1.7" alt="hand heart logo">
             <div>
