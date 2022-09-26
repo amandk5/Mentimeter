@@ -1,4 +1,4 @@
-website![image](https://www.google.com/imgres?imgurl=https%3A%2F%2Fyt3.ggpht.com%2Fytc%2FAMLnZu_s4_dFE0ALh2annYzx2CwPNEfyWZH4Meby9ImT1g%3Ds900-c-k-c0x00ffffff-no-rj&imgrefurl=https%3A%2F%2Fm.youtube.com%2Fchannel%2FUCdgQVjQuk44_FnV9jJ3N0CA&tbnid=RX2kaevY1n3dsM&vet=12ahUKEwiNrvmg_LL6AhW6i9gFHYSHAkcQMygAegUIARDmAQ..i&docid=tTu-nTFnPqoFaM&w=900&h=900&q=mentimeter&ved=2ahUKEwiNrvmg_LL6AhW6i9gFHYSHAkcQMygAegUIARDmAQ)
+### Mentimeter Clone
 > Mentimeter is an online polling tool which can add an interactive element to a lecture, presentation or recorded session. Question types include Multiple Choice, Ranking, Scales, Word Cloud and Open Ended, among others. It can be used for icebreakers, checking knowledge, gauging opinion and prompting debate.
 We have cloned the Expedia website as project of our construct week at** Masai School**. We built this website fully responsive and implemented maximum design.
 
