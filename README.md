@@ -28,7 +28,7 @@ Worked on Template Part with Aman
 > Github: [jitu7989](https://github.com/jitu7989)
 Worked on cart, payments, pricing, enterprise page. 
 
-### Aman Kumar
+### Aman Deep Kujur
 > Github: [amandk5](https://github.com/amandk5)
 Worked on template part with Ketan
 
