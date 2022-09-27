@@ -12,7 +12,7 @@ We have cloned the Mentimeter website as project of our construct week at** Masa
 
 - **Client:** HTML, CSS,JS
 
-- **Server:** Netlify and Local storage
+- **Server:** Netlify and JSON
 
 ## Features
 
