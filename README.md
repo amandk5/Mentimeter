@@ -3,7 +3,7 @@
 We have cloned the Mentimeter website as project of our construct week at** Masai School**. We built this website fully responsive and implemented maximum design.
 
 ### Netlify Link
-[Expedia Website](https://luxury-gnome-1827a2.netlify.app/)
+[Mentimeter Clone](https://luxury-gnome-1827a2.netlify.app/)
 
 # Technology
 
