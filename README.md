@@ -2,7 +2,6 @@
 
 > Mentimeter is an online polling tool which can add an interactive element to a lecture, presentation or recorded session. Question types include Multiple Choice, Ranking, Scales, Word Cloud and Open Ended, among others. It can be used for icebreakers, checking knowledge, gauging opinion and prompting debate.
 We have cloned the Mentimeter website as project of our construct week at** Masai School**. We built this website fully responsive and implemented maximum design.
-# Sugar Cosmetics 
 
 ### Netlify Link
 [Mentimeter Clone](https://luxury-gnome-1827a2.netlify.app/)
