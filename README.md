@@ -6,8 +6,6 @@ We have cloned the Mentimeter website as project of our construct week at** Masa
 ### Netlify Link
 [Mentimeter Clone](https://luxury-gnome-1827a2.netlify.app/)
 
-<img src="https://i.postimg.cc/zvtyL7zF/mentimeter-Img.png" alt="mentimeter homepage"/>
-
 # Technology
 
 
@@ -23,6 +21,21 @@ We have cloned the Mentimeter website as project of our construct week at** Masa
 
 -User can easily see the variety templates to start presentations
 
+## Below are some of the Screenshots with features:
+<ul>
+    <li>
+     <div>
+         <h4>homepage</h4>
+         <img src="https://i.postimg.cc/zvtyL7zF/mentimeter-Img.png" alt="mentimeter homepage"/>
+     </div>
+    </li>
+    <li>
+     <div>
+         <h4>mentimeter presentation</h4>
+         <img src="https://i.postimg.cc/g0VrymcJ/mentimeter-Presentation.png" alt="mentimeter homepage"/>
+     </div>
+    </li>  
+</ul>
 
 ## Contributors
 
@@ -45,3 +58,4 @@ Worked on navbar, homepage
 ### Rohit Prajapat
 > Github: [Rohit20033](https://github.com/Rohit20033)
 Worked on templates layout
+
