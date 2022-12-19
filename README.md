@@ -6,6 +6,8 @@ We have cloned the Mentimeter website as project of our construct week at** Masa
 ### Netlify Link
 [Mentimeter Clone](https://luxury-gnome-1827a2.netlify.app/)
 
+<img src="https://i.postimg.cc/zvtyL7zF/mentimeter-Img.png" alt="mentimeter homepage"/>
+
 # Technology
 
 
